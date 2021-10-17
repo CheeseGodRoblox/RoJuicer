@@ -9,8 +9,8 @@ This script will install the following (in this order):<br/>
 4- Grapejuice (manager), Roblox Player (beta with the new browserless interface), and Roblox Studio<br/>
 *=Optional, you have the chance when in the install script<br/>
 <br/>
-CREDITS:
-Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice<br/>
+CREDITS:<br/>
+Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice (https://pastebin.com/raw/5SeVb005)<br/>
 Grapejuice - Simple Roblox compatibility layer:<br/>
 GitLab Page: https://gitlab.com/brinkervii/grapejuice<br/>
 DevForum page: https://devforum.roblox.com/t/grapejuice-easily-run-roblox-on-linux/262949<br/>
