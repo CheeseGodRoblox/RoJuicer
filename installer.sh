@@ -2,11 +2,14 @@
  
 # Prompts
 distroPromptText="
-Which Linux distribution are you using? (If it's not listed, it's not supported by this installer and you'll have to install Grapejuice normally) 
+Welcome to the Grapejuice automatic installer! This script will attempt to install Grapejuice and all dependencies without you having to type any of the commands. If the script ever asks for your password, this is because authentication is needed to install most files (although there is a timer built into Linux that will allow more installs if within a certain time of the last authentication), so you will need to enter your password for the script to work in those cases.
+
+Which Distribution of Linux are you using? (If it's not listed here, it's not supported) 
 Debian - 1 
 Ubuntu - 2 
 Zorin - 3 
-Linux Mint - 4"
+Linux Mint - 4
+Help, I don't know my Distribution - help"
 
 debianVersionPromptText="
 Which version of Debian?
@@ -39,6 +42,14 @@ For safety of not messing with wine if an upgrade is not needed, please check th
 # Errors
 standardInvalidInputError="Could not understand your input, please try again"
 
+# Info 
+distroInfoText="
+Your current Linux Distribution information from your system says:
+
+$(lsb_release -a)
+
+If this information does not clear up what to choose for this program, look at your system information in Settings, or look for a command that you can type into the Terminal that can give you more information.
+"
 # Distro Sorting
 distroSorts=(
 	"Debian10-Debian10"
@@ -60,8 +71,12 @@ downloadDevBranch="git clone -b dev https://github.com/CheeseGodRoblox/Grapejuic
 # Uneditable Variables
 userDistro=""
 
-
+installScriptDependencies(){
+echo Installing script dependencies...
+sudo apt install git
+}
 installPackages(){
+installScriptDependencies
 eval "$downloadDevBranch"
 local wineVersion=`wine --version`
 echo $wineUpgradePromptText
@@ -90,12 +105,9 @@ cd $originalDirectory
 }
 
 
-installScriptDependencies(){
-sudo apt install git
-}
+
 
 distroPrompt(){
-installScriptDependencies
 echo "$distroPromptText"
 read distroResponse
 
@@ -171,6 +183,9 @@ then
 		echo $standardInvalidInputError
 		distroPrompt
 	fi
+elif [[ $distroResponse == help ]]
+then
+	echo "$distroInfoText"
 else
 	echo $standardInvalidInputError
 	distroPrompt
