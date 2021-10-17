@@ -2,9 +2,11 @@
 This simple installer will install all needed files and dependencies to get Grapejuice for Roblox up and running.
 
 This script will install the following (in this order):<br/>
-1- The latest version of Wine Development* (which is currently needed for running Roblox Player)<br/>
-2- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: "https://pastebin.com/raw/5SeVb005")<br/>
-3- Grapejuice (manager), Roblox Player (including beta with the new browserless interface), and Roblox Studio<br/>
+1- Dependencies of the script itself:
+-"git" for package installation
+2- The latest version of Wine Development* (which is currently needed for running Roblox Player)<br/>
+3- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: "https://pastebin.com/raw/5SeVb005")<br/>
+4- Grapejuice (manager), Roblox Player (including beta with the new browserless interface), and Roblox Studio<br/>
 
 CREDITS:<br/>
 
