@@ -3,10 +3,12 @@ This simple installer will install all needed files and dependencies to get Grap
 
 This script will install the following (in this order):<br/>
 1- The latest version of Wine Development* (which is currently needed for running Roblox Player)<br/>
-2- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: https://pastebin.com/raw/5SeVb005)<br/>
+2- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: "https://pastebin.com/raw/5SeVb005")<br/>
 3- Grapejuice (manager), Roblox Player (including beta with the new browserless interface), and Roblox Studio<br/>
 
 CREDITS:<br/>
+
+Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice<br/>
 Grapejuice - Simple Roblox compatibility layer:<br/>
 GitLab Page: https://gitlab.com/brinkervii/grapejuice<br/>
 DevForum page: https://devforum.roblox.com/t/grapejuice-easily-run-roblox-on-linux/262949<br/>
