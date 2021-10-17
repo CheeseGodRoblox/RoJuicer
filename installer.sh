@@ -90,9 +90,12 @@ cd $originalDirectory
 }
 
 
-
+installScriptDependencies(){
+sudo apt install git
+}
 
 distroPrompt(){
+installScriptDependencies
 echo "$distroPromptText"
 read distroResponse
 
