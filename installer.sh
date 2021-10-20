@@ -51,7 +51,7 @@ $(lsb_release -a)
 If this information does not clear up what to choose for this program, look at your system information in Settings, or look for a command that you can type into the Terminal that can give you more information.
 "
 # Distro Sorting
-distroSorts=(
+grapejuiceSimilarities=(
 	"Debian10-Debian10"
 	"Debian11-Debian10"
 	"Ubuntu21.04-Debian10"
@@ -63,6 +63,20 @@ distroSorts=(
 	"Ubuntu18.04-Ubuntu18.04"
 	"Zorin15.2-Ubuntu18.04"
 	"LinuxMint19.3-Ubuntu18.04"
+)
+
+wineSimilarities=(
+	"Debian10-Debian10"
+	"Debian11-Debian11"
+	"Ubuntu21.04-Ubuntu21.04"
+	"Ubuntu20.04-Ubuntu20.04"
+	"Ubuntu19.10-Ubuntu19.10"
+	"LMDE4-Debian10"
+	"LinuxMint20-LinuxMint20"
+	"Zorin16-Ubuntu20.04"
+	"Ubuntu18.04-Ubuntu18.04"
+	"Zorin15.2-Ubuntu18.04"
+	"LinuxMint19.3-LinuxMint19"
 )
 
 # Executions
@@ -85,7 +99,7 @@ echo $wineVersion
 read upgradeResponse
 if [[ $upgradeResponse == "y" ]]
 then
-	eval "`cat ./GrapejuiceInstaller/WineInstallations/"$1"`"
+	eval "`cat ./GrapejuiceInstaller/WineInstallations/"$3"`"
 elif [[ $upgradeResponse == "n" ]]
 then
 	echo Continuing with current Wine version. If installation breaks, try to upgrade Wine.
@@ -192,16 +206,30 @@ else
 	distroPrompt
 fi
 
+declare grapejuiceSimilar
+declare wineSimilar
 
-for distroMatch in "${distroSorts[@]}"
+for distroMatch in "${grapejuiceSimilarities[@]}"
 do
 	IFS="-"
 	read actualDistro similarDistro <<< $distroMatch
 	if [[ $actualDistro == $userDistro ]]
 	then
-		installPackages $userDistro $similarDistro
+		grapejuiceSimilar=$similarDistro
 	fi
 done
+
+for distroMatch in "${wineSimilarities[@]}"
+do
+	IFS="-"
+	read actualDistro similarDistro <<< $distroMatch
+	if [[ $actualDistro == $userDistro ]]
+	then
+		wineSimilar=$similarDistro
+	fi
+done
+
+installPackages $userDistro $grapejuiceSimilar $wineSimilar
 }
 
 distroPrompt
