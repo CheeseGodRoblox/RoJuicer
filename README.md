@@ -1,5 +1,5 @@
 # GrapejuiceInstaller
-Roblox on Linux Simplified
+#### Roblox on Linux Simplified
 
 This script will install the following (in this order):<br/>
 1- Dependencies of the script itself:<br/>
