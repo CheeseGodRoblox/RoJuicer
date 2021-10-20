@@ -1,5 +1,5 @@
 # GrapejuiceInstaller
-This simple installer will install all needed files and dependencies to get Grapejuice for Roblox up and running.
+Roblox on Linux Simplified
 
 This script will install the following (in this order):<br/>
 1- Dependencies of the script itself:<br/>
