@@ -78,6 +78,7 @@ sudo apt install git
 installPackages(){
 installScriptDependencies
 eval "$downloadDevBranch"
+sudo apt install wine
 local wineVersion=`wine --version`
 echo $wineUpgradePromptText
 echo $wineVersion
