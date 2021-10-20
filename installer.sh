@@ -84,7 +84,7 @@ echo $wineVersion
 read upgradeResponse
 if [[ $upgradeResponse == "y" ]]
 then
-	eval "`cat ./GrapejuiceInstaller/WineInstallations/"$2"`"
+	eval "`cat ./GrapejuiceInstaller/WineInstallations/"$1"`"
 elif [[ $upgradeResponse == "n" ]]
 then
 	echo Continuing with current Wine version. If installation breaks, try to upgrade Wine.
