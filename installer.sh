@@ -88,6 +88,8 @@ userDistro=""
 installScriptDependencies(){
 echo Installing script dependencies...
 sudo apt install git
+sudo apt install p7zip-full
+sudo apt install curl
 }
 installPackages(){
 installScriptDependencies
