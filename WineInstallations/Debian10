@@ -3,6 +3,7 @@ sudo apt install libfaudio0:i386
 sudo dpkg --add-architecture i386
 wget -nc https://dl.winehq.org/wine-builds/winehq.key
 sudo apt-key add winehq.key
-deb https://dl.winehq.org/wine-builds/debian/ buster main
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/debian/ buster main'
+
 sudo apt update
 sudo apt install --install-recommends winehq-devel
