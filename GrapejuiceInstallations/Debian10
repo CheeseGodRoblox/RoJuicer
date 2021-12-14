@@ -1,6 +1,9 @@
 sudo apt update
 sudo apt upgrade -y
-sudo apt install -y git python3-pip python3-setuptools python3-wheel python3-dev pkg-config libcairo2-dev gtk-update-icon-cache desktop-file-utils xdg-utils libgirepository1.0-dev gir1.2-gtk-3.0
-git clone https://gitlab.com/brinkervii/grapejuice.git /tmp/grapejuice
-cd /tmp/grapejuice
-python3 ./install.py
+sudo apt install -y wget gpg
+wget -O- https://gitlab.com/brinkervii/grapejuice/-/raw/master/ci_scripts/signing_keys/public_key.gpg | gpg --dearmor > /tmp/grapejuice-archive-keyring.gpg
+sudo cp /tmp/grapejuice-archive-keyring.gpg /usr/share/keyrings/
+rm /tmp/grapejuice-archive-keyring.gpg
+sudo tee /etc/apt/sources.list.d/grapejuice.list <<< 'deb [signed-by=/usr/share/keyrings/grapejuice-archive-keyring.gpg] https://brinkervii.gitlab.io/grapejuice/repositories/debian/ universal main' > /dev/null
+sudo apt update
+sudo apt install -y grapejuice
