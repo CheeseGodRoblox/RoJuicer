@@ -51,7 +51,7 @@ $(lsb_release -a)
 If this information does not clear up what to choose for this program, look at your system information in Settings, or look for a command that you can type into the Terminal that can give you more information.
 "
 
-GPLWarning=$"
+GPLWarning="
 Grapejuicer  Copyright (C) 2021  Cheese God
 This program comes with ABSOLUTELY NO WARRANTY; for details type 'show w'.
 This is free software, and you are welcome to redistribute it
@@ -241,6 +241,7 @@ done
 installPackages $userDistro $grapejuiceSimilar $wineSimilar
 }
 
+echo "$GPLWarning"
 distroPrompt
 
 /bin/bash
