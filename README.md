@@ -14,7 +14,7 @@ This script will install the following (in this order):<br/>
 *=Optional, you have the chance when in the install script<br/>
 <br/>
 
-Installation:<br/>
+INSTALLATION:<br/>
 ```
 git clone https://github.com/CheeseGodRoblox/RoJuicer
 cd RoJuicer
