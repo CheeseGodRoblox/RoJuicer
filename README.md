@@ -1,7 +1,7 @@
 # RoJuicer
 #### Roblox on Linux Simplified
 
-This script will install the following (in this order):<br/>
+#### This script will install the following (in this order):<br/>
 1- Dependencies of the script itself:<br/>
 -"git" for package installation<br/>
 -"p7zip-full"<br/>
@@ -14,7 +14,7 @@ This script will install the following (in this order):<br/>
 *=Optional, you have the chance when in the install script<br/>
 <br/>
 
-INSTALLATION:<br/>
+#### INSTALLATION:<br/>
 ```
 git clone https://github.com/CheeseGodRoblox/RoJuicer
 cd RoJuicer
@@ -22,7 +22,14 @@ chmod +x installer.sh
 ./installer.sh
 ```
 <br/>
-CREDITS:<br/>
+#### FAQS:<br/>
+Does this program need Internet to function?<br/>
+Yes, this script requires that you have an Internet connection to download necessary files, as well as to install dependencies and Grapejuice themselves.<br/>
+
+Can I edit and distribute this code as my own?<br/>
+Yes, feel free to edit and distribute this code. It's protected with the GPL 3.0 License, so as long as it's Open-Source, you're good.<br/>
+<br/>
+#### CREDITS:<br/>
 Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice (https://pastebin.com/raw/5SeVb005)<br/>
 Grapejuice - Simple Roblox compatibility layer:<br/>
 GitLab Page: https://gitlab.com/brinkervii/grapejuice<br/>
@@ -32,9 +39,4 @@ Wine (Wine is not an emulator) - Application to run Windows applications on Linu
 Homepage: https://www.winehq.org<br/>
 Downloads: https://wiki.winehq.org/Download<br/>
 
-FAQS:<br/>
-Does this program need Internet to function?<br/>
-Yes, this script requires that you have an Internet connection to download necessary files, as well as to install dependencies and Grapejuice themselves.<br/>
 
-Can I edit and distribute this code as my own?<br/>
-Yes, feel free to edit and distribute this code. It's protected with the GPL 3.0 License, so as long as it's Open-Source, you're good.<br/>
