@@ -23,5 +23,5 @@ FAQS:<br/>
 Does this program need Internet to function?<br/>
 Yes, this script requires that you have an Internet connection to download necessary files, as well as to install dependencies and Grapejuice themselves.<br/>
 
-Does this script have any sort of tracking systems?<br/>
-No, this script has no way to track what you are doing. You can even check out the contents of every single file if you wanted to, as it's all open source here.<br/>
+Can I edit and distribute this code as my own?<br/>
+Yes, feel free to edit and distribute this code. It's protected with the GPL 3.0 License, so as long as it's Open-Source, you're good.<br/>
