@@ -4,10 +4,22 @@
 This script will install the following (in this order):<br/>
 1- Dependencies of the script itself:<br/>
 -"git" for package installation<br/>
+-"p7zip-full"<br/>
+-"curl" for acquiring script to fix cursor bug<br/>
+-"python3" to run Grapejuice installation commands<br/>
 2- The latest version of Wine Development* (which is currently needed for running Roblox Player)<br/>
 3- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: "https://pastebin.com/raw/5SeVb005")<br/>
 4- Grapejuice (manager), Roblox Player (beta with the new browserless interface), and Roblox Studio<br/>
 *=Optional, you have the chance when in the install script<br/>
+<br/>
+
+Installation:<br/>
+```
+git clone https://github.com/CheeseGodRoblox/RoJuicer
+cd RoJuicer
+chmod +x installer.sh
+./installer.sh
+```
 <br/>
 CREDITS:<br/>
 Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice (https://pastebin.com/raw/5SeVb005)<br/>
