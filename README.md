@@ -22,7 +22,7 @@ chmod +x installer.sh
 ./installer.sh
 ```
 <br/>
-#### FAQS:<br/>
+#### FAQS:
 Does this program need Internet to function?<br/>
 Yes, this script requires that you have an Internet connection to download necessary files, as well as to install dependencies and Grapejuice themselves.<br/>
 
