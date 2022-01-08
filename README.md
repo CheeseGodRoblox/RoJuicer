@@ -1,4 +1,4 @@
-# Grapejuicer
+# RoJuicer
 #### Roblox on Linux Simplified
 
 This script will install the following (in this order):<br/>
