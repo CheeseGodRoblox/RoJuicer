@@ -7,6 +7,7 @@ This script will install the following (in this order):<br/>
 -"p7zip-full"<br/>
 -"curl" for acquiring script to fix cursor bug<br/>
 -"python3" to run Grapejuice installation commands<br/>
+<br/>
 2- The latest version of Wine Development* (which is currently needed for running Roblox Player)<br/>
 3- Wine modification script to fix cursor getting stuck (downloaded and initialized from the link: "https://pastebin.com/raw/5SeVb005")<br/>
 4- Grapejuice (manager), Roblox Player (beta with the new browserless interface), and Roblox Studio<br/>
