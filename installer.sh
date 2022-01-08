@@ -94,9 +94,14 @@ userDistro=""
 
 installScriptDependencies(){
 echo Installing script dependencies...
+echo Installing git
 sudo apt install git
+echo Installing p7zip-full
 sudo apt install p7zip-full
+echo Installing curl
 sudo apt install curl
+echo Installing python3
+sudo apt install python3
 }
 installPackages(){
 installScriptDependencies
@@ -117,7 +122,6 @@ else
 fi
 
 #sudo su root &
-touch CursorFix.py
 curl https://pastebin.com/raw/5SeVb005 >> CursorFix.py
 python3 CursorFix.py
 rm winehq.key
