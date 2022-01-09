@@ -2,7 +2,7 @@
  
 # Prompts
 distroPromptText="
-Welcome to the Grapejuice automatic installer! This script will attempt to install Grapejuice and all dependencies without you having to type any of the commands. If the script ever asks for your password, this is because authentication is needed to install most files (although there is a timer built into Linux that will allow more installs if within a certain time of the last authentication), so you will need to enter your password for the script to work in those cases.
+Welcome to the RoJuicer automatic installer! This script will attempt to install Grapejuice and all dependencies without you having to type any of the commands. If the script ever asks for your password, this is because authentication is needed to install most files (although there is a timer built into Linux that will allow more installs if within a certain time of the last authentication), so you will need to enter your password for the script to work in those cases.
 
 Which Distribution of Linux are you using? (If it's not listed here, it's not supported) 
 Debian - 1 
@@ -46,13 +46,13 @@ standardInvalidInputError="Could not understand your input, please try again"
 distroInfoText="
 Your current Linux Distribution information from your system says:
 
-$(lsb_release -a)
+$(lsb_release -a 2>/dev/null)
 
 If this information does not clear up what to choose for this program, look at your system information in Settings, or look for a command that you can type into the Terminal that can give you more information.
 "
 
 GPLWarning="
-Grapejuicer  Copyright (C) 2022  Cheese God
+RoJuicer  Copyright (C) 2022  Cheese God
 This program comes with ABSOLUTELY NO WARRANTY; for details type 'show w'.
 This is free software, and you are welcome to redistribute it
 under certain conditions; type 'show c' for details."
