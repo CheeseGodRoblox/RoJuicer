@@ -226,7 +226,7 @@ then
 elif [[ $distroResponse == help ]]
 then
 	echo "$distroInfoText"
-elif [[ $distroResponse == "show w" ]]
+elif [[ $distroResponse == "show\ w" ]]
 then
 	echo "$warranty"
 else
