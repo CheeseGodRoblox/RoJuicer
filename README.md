@@ -22,7 +22,7 @@ chmod +x installer.sh
 ./installer.sh
 ```
 
-NOTE: Instead of using ```git clone``` you can instead go to Releases and download the latest release. This can ensure you have as stable and working an experience as possible.
+NOTE: Instead of using ```git clone``` you can instead go to Releases and download the latest release. This can ensure you have as stable an experience as possible.
 
 <br/>
 
