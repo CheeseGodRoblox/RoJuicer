@@ -31,7 +31,7 @@ Does this program need Internet to function?<br/>
 Yes, this script requires that you have an Internet connection to download necessary files, as well as to install dependencies and Grapejuice themselves.<br/>
 
 Can I edit and distribute this code as my own?<br/>
-Yes, feel free to edit and distribute this code. It's protected with the GPL 3.0 License, so as long as it's Open-Source, you're good.<br/>
+Yes, feel free to edit and change/distribute this code. It's protected with the GPL 3.0 License, so as long as it's Open-Source, and you credit this original creation, you're good.<br/>
 <br/>
 #### CREDITS:<br/>
 Mouse locking issue fixed by Brinker7, who is also the creator of Grapejuice (https://pastebin.com/raw/5SeVb005)<br/>
