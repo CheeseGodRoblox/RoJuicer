@@ -52,7 +52,7 @@ If this information does not clear up what to choose for this program, look at y
 "
 
 GPLWarning="
-Grapejuicer  Copyright (C) 2021  Cheese God
+Grapejuicer  Copyright (C) 2022  Cheese God
 This program comes with ABSOLUTELY NO WARRANTY; for details type 'show w'.
 This is free software, and you are welcome to redistribute it
 under certain conditions; type 'show c' for details."
@@ -95,18 +95,17 @@ userDistro=""
 installScriptDependencies(){
 echo Installing script dependencies...
 echo Installing git
-sudo apt install git
+sudo apt install git -y
 echo Installing p7zip-full
-sudo apt install p7zip-full
+sudo apt install p7zip-full -y
 echo Installing curl
-sudo apt install curl
+sudo apt install curl -y
 echo Installing python3
-sudo apt install python3
+sudo apt install python3 -y
 }
 installPackages(){
 installScriptDependencies
 eval "$downloadDevBranch"
-sudo apt install wine
 local wineVersion=`wine --version`
 echo $wineUpgradePromptText
 echo $wineVersion
