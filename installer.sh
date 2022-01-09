@@ -94,6 +94,8 @@ userDistro=""
 
 installScriptDependencies(){
 echo Installing script dependencies...
+echo Updating repositories...
+sudo apt update
 echo Installing git
 sudo apt install git -y
 echo Installing p7zip-full
