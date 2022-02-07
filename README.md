@@ -1,6 +1,8 @@
 # RoJuicer
 #### Roblox on Linux Simplified
 
+### Please keep in mind that RoJuicer was a small project created by me to learn more about coding. If the installation does not work, you'll have to install Grapejuice normally. Do not expect any support on issues you've encountered.
+
 #### This script will install the following (in this order):<br/>
 1- Dependencies of the script itself:<br/>
 -"git" for package installation<br/>
