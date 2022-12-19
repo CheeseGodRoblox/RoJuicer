@@ -226,6 +226,7 @@ then
 elif [[ $distroResponse == help ]]
 then
 	echo "$distroInfoText"
+	exit
 elif [[ $distroResponse == "show\ w" ]]
 then
 	echo "$warranty"
